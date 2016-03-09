@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 gulp.task('watch:scss', function() {
     var last = {};
     watch(
-        './*.js',
+        './**/*.json',
         {'events': ['add', 'change', 'unlink', 'addDir', 'unlinkDir']},
         function (f) {
             console.log('scss operation');
